@@ -9,6 +9,9 @@ const uri = process.env.MONGODB_URI
 // MIDDLEWARE
 
 // ROUTES
+app.get("/", (req, res) => {
+    res.send("Test Route")
+})
 
 // PORT
 app.listen(PORT, () => {
