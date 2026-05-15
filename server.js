@@ -11,8 +11,14 @@ const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 
 // ROUTES
-app.get("/", (req, res) => {
-    res.send("Test Route");
+app.get("/", async (req, res) => {
+    try {
+        await client.connect();
+
+        res.json({message: "Successfully connected to the database!"})
+    } catch (error) {
+        res.status(500).json({message: "Failed to connect to the database."})
+    }
 });
 
 // PORT
