@@ -1,0 +1,19 @@
+{
+  "name": "social-media-api",
+  "version": "1.0.0",
+  "description": "Module 12 Lab1: Connecting a Database",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Valerie Bolden",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0"
+  }
+}
